@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Amor Inicia Sesión</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Música de fondo -->
+  <audio id="bgMusic" loop autoplay>
+    <source src="media/music.mp3" type="audio/mpeg" />
+    Tu navegador no soporta audio.
+  </audio>
+
+  <!-- Formulario de inicio de sesión -->
+  <div class="container" id="loginBox">
+    <h1>Bienvenida mi amor 💖</h1>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Usuario" required />
+      <input type="password" id="password" placeholder="Contraseña" required />
+      <button type="submit">Entrar</button>
+      <button type="button" id="registerBtn" class="ghost-btn">Registrarse</button>
+      <a href="https://wa.me/573026782036?text=No%20se%20la%20contraseña%20perdón%20😔%20por%20recompensa%20te%20enviaré%20fotitos%20de%20mí%20todos%20los%20días%20sin%20que%20me%20los%20pidas%20😳%20sé%20que%20me%20encantas%20y%20me%20amas%20💌" 
+         target="_blank" 
+         class="whatsapp-btn">Olvidé mi contraseña</a>
+      <p id="message"></p>
+    </form>
+  </div>
+
+  <!-- Pantalla de bienvenida romántica -->
+  <div class="container" id="welcomeScreen" style="display: none;">
+    <h1 class="love-title">TE AMO</h1>
+    <h2 class="love-subtitle">Mi ojitos de uva</h2>
+    <p class="love-letter">
+      Mi Nay, mi ojitos de uva, mi mami chula preciosa... 💖<br><br>
+      No hay un solo día en que no agradezca a la vida por tenerte a mi lado. Eres lo más bonito que me ha pasado, mi razón de sonreír y el amor más puro que he conocido.<br><br>
+      Estoy cada día más enamorado de ti, de tu forma de ser, de tu ternura, de tus ojitos hermosos, de tu voz que me calma y de todo lo que eres. Tú me completas, tú me haces feliz, tú eres mi hogar 🏡.<br><br>
+      Nunca quiero perderte, mi amor. Eres lo mejor que tengo en esta vida y haré lo que sea necesario para cuidarte, protegerte y hacerte sonreír cada día. Gracias por existir, por elegirme, por amarme como lo haces.<br><br>
+      Te amo más allá de las palabras, de las estrellas, del tiempo. Eres mi vida entera. ❤️
+    </p>
+
+    <!-- Encuesta -->
+    <div class="rating-section">
+      <h3>¿Cómo me calificas como tu novio? 🥺</h3>
+      <input type="range" min="1" max="10" value="10" id="ratingSlider">
+      <p>Tu calificación: <span id="ratingValue">10</span>/10</p>
+      <button id="sendRatingBtn" class="whatsapp-btn">Enviar encuesta 💌</button>
+
+      <!-- Botón de regalo -->
+      <button id="giftBtn" class="ghost-btn">Quiero mi regalo 🎁</button>
+      <div id="giftContainer" style="display: none; margin-top: 15px;">
+        <img id="giftImage" src="media/regalo.jpg" alt="Tu regalo" style="max-width: 100%; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
